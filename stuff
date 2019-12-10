@@ -1,0 +1,15 @@
+open Printf
+
+let getclass = 
+        let a_list = ["hello"; "world"] in
+        List.iter (printf "%s ") a_list;
+
+let makeplayer = 
+        print_string "Enter player name: ";
+        let newname = read_line () in
+        let myplayer = new Player.player in
+        myplayer#setname newname|> ignore;
+        let playername = myplayer#getname in 
+        Format.printf "Hello, %s world\n%!" playername;
+
+let () = makeplayer
