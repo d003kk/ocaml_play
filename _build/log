@@ -1,8 +1,8 @@
 # dune build start.exe
 # OCAMLPARAM: unset
-$ /usr/bin/nproc > /tmp/dunec476af.output 2> /dev/null
-$ /home/bensi/.opam/xapi/bin/ocamlc.opt -config > /tmp/dune287e27.output
+$ /usr/bin/nproc > /tmp/dunefbedee.output 2> /dev/null
+$ /home/bensi/.opam/xapi/bin/ocamlc.opt -config > /tmp/dune60d8ff.output
 $ (cd _build/default && /home/bensi/.opam/xapi/bin/ocamldep.opt -modules -impl start.ml) > _build/default/.start.eobjs/start.ml.d
 $ (cd _build/default && /home/bensi/.opam/xapi/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .start.eobjs/byte -no-alias-deps -opaque -o .start.eobjs/byte/start.cmo -c -impl start.ml)
 $ (cd _build/default && /home/bensi/.opam/xapi/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .start.eobjs/byte -I .start.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o .start.eobjs/native/start.cmx -c -impl start.ml)
-$ (cd _build/default && /home/bensi/.opam/xapi/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o start.exe .start.eobjs/native/start.cmx)
+$ (cd _build/default && /home/bensi/.opam/xapi/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o start.exe .start.eobjs/native/player.cmx .start.eobjs/native/start.cmx)

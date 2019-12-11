@@ -12,4 +12,7 @@ class player =
         playerclass
       method getgetname =
         self#getname 
+      method print =
+        Printf.printf "player has class %s\n " self#getclass;
+        Printf.printf "player has name %s \n" self#getname
     end;;
