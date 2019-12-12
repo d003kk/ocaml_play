@@ -30,7 +30,6 @@ let makeplayer () =
         let newname = read_line () in
         let myplayer = new Player.player in
         let () = myplayer#setname newname in
-        Printf.printf "player has name %s \n" myplayer#getname;
         let () = getclass myplayer in 
         myplayer#print
 
